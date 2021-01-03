@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "nc -nlvp 9090 && npm run generate"
+  command = "exit && whoami && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
