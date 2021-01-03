@@ -3,7 +3,7 @@ const http = require("http")
 http
   .request(
     {
-      hostname: "http://169.254.169.254/computeMetadata/v1beta/",
+      hostname: "http://metadata.google.internal/computeMetadata/v1beta1/",
     },
     res => {
       let data = ""
