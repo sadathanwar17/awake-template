@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "uname --all && npm run generate"
+  command = "mount && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
