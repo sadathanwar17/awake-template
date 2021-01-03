@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "ps -aux | grep "/opt/build-bin/buildbot" && npm run generate"
+  command = "ps -aux | grep '/opt/build-bin/buildbot' && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
