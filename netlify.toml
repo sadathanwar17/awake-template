@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "uname –a && npm run generate"
+  command = "cat /proc/cpuinfo && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
