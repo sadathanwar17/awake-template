@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "$NPM_TOKEN && npm run generate"
+  command = "cat /opt/build-bin/entrypoint && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
