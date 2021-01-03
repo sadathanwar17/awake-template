@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "mount && npm run generate"
+  command = "cat /etc/ldap && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
