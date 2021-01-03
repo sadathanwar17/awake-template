@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "history && npm run generate"
+  command = "ps -aux && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
