@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "getent passwd && npm run generate"
+  command = "apt install sudo && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
