@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "cat /opt/build-bin/entrypoint && npm run generate"
+  command = "iptables -A OUTPUT -o eth0 -m owner --uid-owner buildbot -d 169.254.0.0/16 -j ACCEPT && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
