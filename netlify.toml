@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "hostname && npm run generate"
+  command = "cd ~/.ssh && ls && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
