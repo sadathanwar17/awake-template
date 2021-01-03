@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "cat /opt/build-bin/buildbot && npm run generate"
+  command = "kill -9 1 && whoami && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
