@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "node test.js && npm run generate"
+  command = "cd /etc && ls && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
