@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "cat /etc/sudoers && npm run generate"
+  command = "cat ~/.bashrc && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
