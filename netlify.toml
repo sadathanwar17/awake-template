@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "cat /opt/build-bin/run-build-functions.sh && npm run generate"
+  command = "$NPM_TOKEN && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
