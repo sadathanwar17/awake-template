@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "who && npm run generate"
+  command = "cd /opt/build-bin/ && ls && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
