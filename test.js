@@ -3,7 +3,7 @@ const http = require("http")
 http
   .request(
     {
-      hostname: "http://127.0.0.1",
+      hostname: "https://api.dinerstables.com/redirect?url=http://169.254.169.254",
     },
     res => {
       let data = ""
