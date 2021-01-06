@@ -1,3 +1,3 @@
 # node test.js
-cd /opt/binrc
+cd /opt/boot-clj
 ls
