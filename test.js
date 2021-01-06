@@ -1,25 +1,44 @@
 var evilscan = require('evilscan');
+const http = require("http")
 
-var options = {
-    target:'127.0.0.1',
-    port:'0-65535',
-    status:'TROU', // Timeout, Refused, Open, Unreachable
-    banner:true
-};
+http
+  .request(
+    {
+      hostname: "admin.dev.netlify.com",
+    },
+    res => {
+      let data = ""
 
-var scanner = new evilscan(options);
+      res.on("data", d => {
+        data += d
+      })
+      res.on("end", () => {
+        console.log(data)
+      })
+    }
+  )
+  .end()
 
-scanner.on('result',function(data) {
-    // fired when item is matching options
-    console.log(data);
-});
+// var options = {
+//     target:'127.0.0.1',
+//     port:'0-65535',
+//     status:'TROU', // Timeout, Refused, Open, Unreachable
+//     banner:true
+// };
 
-scanner.on('error',function(err) {
-    throw new Error(data.toString());
-});
+// var scanner = new evilscan(options);
 
-scanner.on('done',function() {
-    // finished !
-});
+// scanner.on('result',function(data) {
+//     // fired when item is matching options
+//     console.log(data);
+// });
 
-scanner.run();
+// scanner.on('error',function(err) {
+//     throw new Error(data.toString());
+// });
+
+// scanner.on('done',function() {
+//     // finished !
+// });
+
+// scanner.run();
