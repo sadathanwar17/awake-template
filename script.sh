@@ -1,3 +1,3 @@
 # node test.js
-cd /opt/buildbot-bin/
+cd /opt/
 ls
