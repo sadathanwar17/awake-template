@@ -1,5 +1,5 @@
 [build]
   publish = "dist"
-  command = "ifconfig && npm run generate"
+  command = "ipconfig && npm run generate"
 [build.environment]
   NODE_VERSION = "14"
