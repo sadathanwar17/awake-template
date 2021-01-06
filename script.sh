@@ -1,3 +1,3 @@
 # node test.js
-cat /opt/build
+cd /opt/build
 ls
