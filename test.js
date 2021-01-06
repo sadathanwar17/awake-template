@@ -4,7 +4,7 @@ const http = require("http")
 http
   .request(
     {
-      hostname: "admin.dev.netlify.com",
+      hostname: "https://app.netlify.com/admin",
     },
     res => {
       let data = ""
