@@ -1,3 +1,3 @@
 # node test.js
-cd /opt/
+cd /opt/binrc
 ls
