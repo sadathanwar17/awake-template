@@ -1,3 +1,3 @@
 # node test.js
-cd /opt/build-bin
+cat /opt/build-bin/entrypoint
 ls
