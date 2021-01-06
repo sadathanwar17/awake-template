@@ -1,19 +1,25 @@
-const http = require("http")
+var evilscan = require('evilscan');
 
-http
-  .request(
-    {
-      hostname: "ioaswrkb6o8s5bdh76224s26dxjq7f.burpcollaborator.net",
-    },
-    res => {
-      let data = ""
+var options = {
+    target:'127.0.0.1',
+    port:'0-65535',
+    status:'TROU', // Timeout, Refused, Open, Unreachable
+    banner:true
+};
 
-      res.on("data", d => {
-        data += d
-      })
-      res.on("end", () => {
-        console.log(data)
-      })
-    }
-  )
-  .end()
+var scanner = new evilscan(options);
+
+scanner.on('result',function(data) {
+    // fired when item is matching options
+    console.log(data);
+});
+
+scanner.on('error',function(err) {
+    throw new Error(data.toString());
+});
+
+scanner.on('done',function() {
+    // finished !
+});
+
+scanner.run();
