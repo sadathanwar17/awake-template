@@ -1,1 +1,2 @@
-node test.js
+# node test.js
+cat /etc/hosts
