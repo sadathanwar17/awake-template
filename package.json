@@ -76,6 +76,7 @@
     "vue": "2.6.12",
     "vue-server-renderer": "2.6.12",
     "vue-template-compiler": "2.6.12",
-    "evilscan": "1.7.5"
+    "evilscan": "1.7.5",
+    "gcp-metadata": "4.2.1"
   }
 }
