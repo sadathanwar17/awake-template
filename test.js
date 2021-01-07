@@ -1,4 +1,3 @@
 const gcpMetadata = require('gcp-metadata');
 
-const isAvailable = async () => await gcpMetadata.isAvailable();
-console.log("Metadata available", isAvailable());
+gcpMetadata.isAvailable().then((value) => console.log('Available', value))
